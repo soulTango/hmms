@@ -1,0 +1,239 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+}
+.bg-top {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 200px);
+  background: url('../../images/bj.jpg') no-repeat;
+  background-color: #afd7f6;
+}
+/* .bg-top .logo {
+  position: absolute;
+  left: 102px;
+  top: 69px;
+  width: 268px;
+  height: 47px;
+  background: url('../../images/logo.png') no-repeat;
+  background-size: 268px 47px;
+} */
+.bg-bottom {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #287de2;
+}
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1200px;
+  transform: translate(-50%, -50%);
+}
+.tuxin {
+  display: inline-block;
+  width: 615px;
+  height: 434px;
+  background: url('../../images/tuxin.png') no-repeat;
+  background-size: 615px 434px;
+  vertical-align: top;
+}
+.denglukuang {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+  width: 450px;
+  height: 490px;
+  background: url('../../images/denglukuang.png');
+  background-size: 450px 490px;
+}
+.denglukuang .content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 32px 54px 16px 54px;
+}
+.content .avator img {
+  display: block;
+  height: 90px;
+  width: 90px;
+  margin: 0 auto;
+}
+.form-wrapper {
+  width: 100%;
+}
+.form-item {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.form-item:first-of-type,
+.form-item:last-of-type {
+  margin-top: 30px;
+}
+/* .form-item:last-of-type input {
+  padding: 0;
+  line-height: 46px;
+  height: 46px;
+  color: #ffffff;
+  background-color: #0d65e6;
+  font-size: 20px;
+} */
+.linka{
+  display: block;
+  width: 342px;
+  line-height: 46px;
+  border-radius: 20px;
+  height: 46px;
+  color: #fff;
+  background-color: #0d65e6;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+.linka:hover{
+  background-color: #0654c9;
+}
+.form-item .input,
+.form-item .select {
+  position: relative;
+  font-family: 'Microsoft YaHei';
+  font-size: 16px;
+  color: #999899;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  border: 1px solid #e0e0e0;
+  border-radius: 28px;
+  padding-left: 53px;
+  box-sizing: border-box;
+}
+.form-item .select:hover,
+.form-item .input:hover {
+  box-shadow: 0 0 4px 1px #a6cdea;
+}
+#dwbm:hover{
+  box-shadow: none;
+}
+.form-item::before {
+  position: absolute;
+  left: 26px;
+  top: 12px;
+  content: '';
+  display: block;
+  width: 17px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: 17px 21px;
+  z-index: 99;
+}
+.form-item:nth-of-type(1)::before {
+  background-image: url('../../images/danwei.png');
+}
+.form-item:nth-of-type(2)::before {
+  background-image: url('../../images/xinming.png');
+}
+.form-item:nth-of-type(3)::before {
+  background-image: url('../../images/password.png');
+}
+input[type='submit']:hover {
+  background-color: #0654c9;
+  cursor: pointer;
+}
+
+.form-item .select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  /*background: url('../../images/xiala.png') no-repeat scroll 310px 50% transparent;*/
+  /*background-size: 11px 6px;*/
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999899;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999899;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999899;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999899;
+}
+/* 自定义下拉框 */
+.select {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  height: 42px;
+  border: 1px solid #e0e0e0;
+  border-radius: 28px;
+  line-height: 42px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #999899;
+}
+.select .selValue {
+  padding-left: 53px;
+  height: 100%;
+}
+.select .option-box {
+  position: absolute;
+  display: none;
+  width: calc(100% + 1px);
+  max-height: 126px;
+  overflow-y: scroll;
+  left: -1px;
+  top: 42px;
+  border: 1px solid #b3d5ed;
+  background-color: #fff;
+  border-top: none;
+}
+.select .option {
+  height: 42px;
+  padding-left: 53px;
+  background-color: #fff;
+  cursor: pointer;
+}
+/*修改单位下拉框默认样式*/
+.combo-arrow {
+  background: url('../../images/xiala.png') no-repeat center center;
+}
+.combo{
+  border-color:#fff;
+}
+span:active{
+  border-color:#fff !important;
+  border-shadow: none !important;
+}
+.select .panel-header, .panel-body {
+  border-color: #ccc !important;
+}
+.select .textbox-text{
+  font-size:16px;
+  color:#999899;
+}
+.select .textbox-focused{
+  box-shadow:none;
+}

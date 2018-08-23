@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./styles/css/reset.css"> -->
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script src="./js/jquery-easyui-1.4.1/jquery.easyui.min.js"
+            type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css"
+          href="./js/jquery-easyui-1.4.1/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="./js/jquery-easyui-1.4.1/themes/icon.css"/>
+	<script src="./js/layui/layui.all.js"></script>
+    <link rel="stylesheet" href="./styles/css/login.css">
+    <script src="./js/login.js"></script>
+    <script src="./js/vue.js"></script>
+    
+    <title>登录</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg">
+            <div class="bg-top">
+                <div class="logo">
+                </div>
+            </div>
+            <div class="bg-bottom">
+            </div>
+            <div class="wrapper">
+                <div class="tuxin"></div>
+                <div class="denglukuang">
+                    <div class="content">
+                        <div class="avator">
+                            <img src="./images/avator.png" alt="头像无法显示">
+                        </div>
+                        <div class="form-wrapper">
+                            <form id="form">
+                                <!-- <div class="form-item">
+                                    <div class="select">
+                                        <input id="dwbm" style="width: 95%;height: 40px;border: 0;outline: 0;">
+                                    </div>
+                                </div> -->
+                                <div class="form-item">
+                                    <input class="input" type="text" id="username" name="username" v-model="loginData.username" placeholder="用户名" onfocus="this.placeholder=''" onblur="this.placeholder='用户名'">
+                                </div>
+                                <div class="form-item">
+                                    <input class="input" type="password" name="password" id="password" v-model="loginData.password" placeholder="密码" onfocus="this.placeholder=''" onblur="this.placeholder='密码'">
+                                </div>
+                                <div class="form-item">
+                                    <a class="linka" href="javascript:void(0)" @click="login()"> 登&nbsp;录 </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.mapper.LoginMapper" >
+  <resultMap id="BaseResultMap" type="org.bean.Login" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+  </resultMap>
+  
+  <select id="getIsHave" resultType="org.bean.Login">
+  	select * from login where username = #{username,jdbcType=VARCHAR}
+  </select>
+  
+  <select id="getSelectType" resultType="org.bean.Zdfy">
+  	select * from zdfy where zdmc='员工类型' and sfxs='Y'
+  </select>
+  
+  <update id="updateUserInfo" parameterType="org.bean.Login" >
+    update login
+    set password = #{password,jdbcType=VARCHAR},
+      type = #{type,jdbcType=INTEGER},
+      ygzt =#{ygzt,jdbcType=VARCHAR}
+    where username = #{username,jdbcType=VARCHAR}
+  </update>
+  
+  <insert id="addUser" parameterType="org.bean.Login" >
+    insert into login (id, username, password, 
+      type)
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{type,jdbcType=INTEGER})
+  </insert>
+  
+  <update id="resetPwd" parameterType="org.bean.Login" >
+    update login
+    set password = '96e79218965eb72c92a549dd5a330112'
+    where username = #{username,jdbcType=VARCHAR}
+  </update>
+  
+  <delete id="deleteUserInfo" parameterType="org.bean.Login" >
+    delete from login
+    where username = #{username,jdbcType=VARCHAR}
+  </delete>
+  
+  <select id="getUser" resultType="org.bean.Login">
+  	select * from login
+  	where username=#{username} and password=#{password} 
+  </select>
+  
+  <select id="getYgzt" resultType="java.lang.String">
+  	select ygzt from login 
+  	where username=#{username} and password=#{password}
+  </select>
+  
+  <select id="getUserInfo" resultType="org.bean.Login" parameterType="org.bean.Login">
+  	select * from login where 1=1
+  	<if test="type != null and type !=''">
+		 	AND type = #{type}
+	</if>
+  	<if test="username != null and username !=''">
+		 	AND username LIKE '%' #{username} '%'
+	</if>
+	<choose>
+		<when test="ygzt eq 'Y'.toString()">
+			AND ygzt='Y'
+		</when>
+		<otherwise>
+			AND ygzt='N'
+		</otherwise>
+	</choose>
+  </select>
+  
+  <update id="moPwd" parameterType="java.util.Map">
+    update login
+    set password = #{newpassword}
+    where username = #{username}
+  </update>
+  
+  <sql id="Base_Column_List" >
+    id, username, password, type
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from login
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from login
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  
+  <insert id="insertSelective" parameterType="org.bean.Login" >
+    insert into login
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.bean.Login" >
+    update login
+    <set >
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+</mapper>

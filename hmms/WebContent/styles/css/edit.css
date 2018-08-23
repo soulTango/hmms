@@ -1,0 +1,52 @@
+.alert_edit .editBox .editBox_content .editBox_content_leftdiv{
+	display: block;
+	float: left;
+	width: 350px;
+	margin-top: 25px;
+	margin-left: 28px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+
+
+.alert_edit .editBox .editBox_content .editBox_content_rightdiv{
+	display: block; 
+	float: right;
+	width: 350px;
+	margin-top: 25px;
+	margin-left: 28px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.edit {
+  width: 50px;
+  float: left;
+  background: url('../../images/edit.png') no-repeat;
+  background-position: 4px 4px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+
+.delete {
+  width: 50px;
+  float: left;
+  background: url('../../images/delete.png') no-repeat;
+  background-position: 4px 4px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+
+.main .inner_right .whiteBg .white_inner9 table thead{
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background-color: #e1f5ff;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+td .layui-form-switch{
+	margin-top:0;
+}

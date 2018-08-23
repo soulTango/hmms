@@ -1,0 +1,490 @@
+@charset "utf-8";
+*,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.fr {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.hover_listColor {
+    color: #fff;
+}
+.jia {
+    background: url('../../images/jia.png') no-repeat !important;
+    background-position: 10px 10px !important;
+}
+.jian {
+    background: url('../../images/plus.png') no-repeat !important;
+    background-position: 10px 10px !important;
+}
+.zindex {
+    z-index: 100;
+}
+.mr49 {
+    margin-right: 49px;
+}
+.width600 {
+    width: 600px !important;
+}
+.none {
+    display: none;
+}
+.block {
+    display: block !important;
+}
+.width107 {
+    width: 107.7% !important;
+}
+.liClick {
+    color: #fff !important;
+    background-color: #0c4890 !important;
+}
+/************************************************弹出框样式*********************************************/
+.alert_edit {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.alert_edit .editBox {
+    width: 790px;
+    height: 540px;
+    border-radius: 7px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.alert_edit .editBox .editBox_head {
+    width: 100%;
+    height: 45px;
+    background-color: #2e74ca;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.alert_edit .editBox .editBox_head .editBox_head_font,
+.alert_edit .editBox .editBox_head .edit_head_close {
+    text-align: center;
+}
+.alert_edit .editBox .editBox_head .editBox_head_font {
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    line-height: 45px;
+    text-indent: 10px;
+}
+.alert_edit .editBox .editBox_head .editBox_head_close {
+    background: url("../../images/close.png") no-repeat;
+    margin-right: 10px;
+    margin-top: 12px;
+    width: 19px;
+    height: 33px;
+    float: right;
+    cursor: pointer;
+}
+.alert_edit .editBox .editBox_content {
+    width: 750px;
+    height: 446px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.alert_edit .editBox .editBox_content .editBox_content_leftul {
+    display: block;
+    float: left;
+    width: 50%;
+    color: #666;
+}
+.alert_edit .editBox .editBox_content .editBox_content_leftul li {
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+}
+.alert_edit .editBox .editBox_content .layui-form-label {
+    text-align: left;
+    height: 20px;
+    float: left;
+    display: inline-block;
+    white-space: nowrap;
+    padding:9px 10px;
+}
+.alert_edit .editBox .editBox_content  li .layui-input-inline{
+    width:235px;
+}
+.alert_edit .editBox .editBox_content .editBox_content_rightul {
+    display: block;
+    float: right;
+    width: 50%;
+    color: #666;
+}
+.alert_edit .editBox .editBox_content .editBox_content_rightul li {
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+}
+.alert_edit .editBox .editBox_content .editBox_content_center {
+    display: block;
+    float: left;
+    width: 730px;
+    margin-top: 0px;
+    color: #666;
+}
+.alert_edit .editBox .editBox_content .editBox_content_center li {
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.alert_edit .editBox .btnBox {
+    width: 100%;
+    height: 46px;
+    background-color: #e7eff9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.alert_edit .editBox .btnBox div {
+    width: 88px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 12px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+.alert_edit .editBox .btnBox div:first-child {
+    background-color: #be6a10;
+}
+.alert_edit .editBox .btnBox div:last-child {
+    background-color: #2466b6;
+}
+/**********************************查询条件框的样式****************************************************/
+.white_inner,
+.white_inner3,
+.white_inner6,
+.white_inner9,
+.white_inner12 {
+    width: 96%;
+    height: 94%;
+    margin-left: 2.3%;
+    margin-top: 1.7%;
+    float: left;
+}
+.white_inner1,
+.white_inner4,
+.white_inner7,
+.white_inner10,
+.white_inner13 {
+    width: 95%;
+    height: 94%;
+    margin-left: 2.3%;
+    margin-top: 1.7%;
+    float: left;
+}
+.white_inner2,
+.white_inner5,
+.white_inner8,
+.white_inner11,
+.white_inner14 {
+    width: 95%;
+    height: 94%;
+    margin-left: 2.3%;
+    margin-top: 1.7%;
+    float: left;
+}
+div.list_title span {
+    width: 9%;
+    height: 33px;
+    display: block;
+    font-weight: bold;
+    line-height: 33px;
+    border-bottom: 3px solid #238be1;
+    text-align: center;
+    position: relative;
+    text-indent: 10px;
+    background: url('../../images/plus.png') no-repeat;
+    background-position: 10px 10px;
+    cursor: pointer;
+}
+.input_box .layui-form-label {
+    padding: 3px 0px 0 30px;
+}
+.input_box .layui-form-radio {
+    margin: 0px 4px 0 0;
+}
+.confirmBtn {
+    width: 68px;
+    height: 28px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #06a7e8;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.input_box_outer {
+    height: 95%;
+}
+.input_box_outer2 {
+    height: 70%;
+    overflow-y: scroll;
+    display: none;
+}
+.list_title,
+.list_title2{
+    border-bottom: 1px solid #dbdbdb;
+}
+.list_title span,
+.list_title2 span {
+    width: 9%;
+    height: 33px;
+    display: block;
+    font-weight: bold;
+    line-height: 33px;
+    border-bottom: 3px solid #238be1;
+    text-align: center;
+    position: relative;
+    text-indent: 10px;
+    cursor: pointer;
+}
+.list_title2 span {
+    margin-top: 30px;
+}
+.input_box,
+.input_box2{
+    width: 100%;
+    height: 54px;
+    padding-top: 26px;
+}
+.input_box .addBtn,
+.input_box2 .addBtn {
+    width: 88px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2566b3;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: url('../../images/add.png');
+    background-repeat: no-repeat;
+    background-position: 20px 9px;
+    float: left;
+    margin-right: 20px;
+}
+.input_box .aj_leibie,
+.input_box2 .aj_leibie,
+.input_box .aj_jiedian,
+.input_box2 .aj_jiedian,
+.input_box .layui-inline,
+.input_box2 .layui-inline{
+    color: #666666;
+    float: left;
+}
+.aj_leibie,
+.aj_jiedian {
+    margin-right: 15px;
+}
+.aj_leibie input,
+.aj_jiedian select,
+.aj_jiedian input {
+    width: 198px;
+    height: 28px;
+    display: inline-block;
+    border: 1px solid #c0cfdb;
+    font-size: 14px;
+    color: #666;
+}
+.input_box .layui-input-inline input,
+.input_box2 .layui-input-inline input {
+    width: 117px;
+    height: 28px;
+    display: inline-block;
+    border: 1px solid #c0cfdb;
+    font-size: 14px;
+    color: #666;
+}
+.main .inner_right .radius {
+    position: absolute;
+}
+.searchCase{
+    width:140px;
+    float: left;
+}
+.searchCase .flagBtn .layui-form-switch{
+    margin:2px!important;
+}
+.searchCase .layui-input-block{
+    margin-left:10px!important;
+}
+
+/***************************************组织机构公用样式**********************************************/
+.left_div {
+    height: 100%;
+    padding:26px 5px 5px 0px;
+    border-right: 1px solid #dbdbdb;
+}
+.left_top{
+    float: left;
+    margin-bottom: 10px;
+}
+.right_div{
+    height: 100%;
+    padding:0 20px;
+}
+.left_tree{
+    clear: both;
+    height: calc(100% - 40px);
+}
+/**************************************treegrid自定义样式开始******************************************/
+.zdy_edit{
+    display: inline-block;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+    font-size: 12px;
+    margin-right:5px;
+}
+.zdy_delet{
+    display: inline-block;
+    background-color: #FF5722;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+    font-size: 12px;
+    margin-left:5px;
+}
+.zdy_edit:hover{
+    opacity: .8;
+    color: #fff;
+}
+.zdy_delet:hover{
+    opacity: .8;
+    color: #fff;
+}
+.tree_grid .panel-body{
+    border-color:#e6e6e6;
+    color:#666;
+}
+.tree_grid .datagrid-header-row{
+    height:36.7px;
+    background-color: #f2f2f2;
+}
+.tree_grid .datagrid-header .datagrid-cell span{
+    font-size:14px;
+}
+.tree_grid .datagrid-htable,.datagrid-btable,.datagrid-ftable{
+    color:#666;
+}
+.tree_grid .datagrid-row{
+    height:36.7px;
+}
+.tree_grid .datagrid-header{
+    border:0!important;
+}
+.tree_grid .datagrid-header td,.datagrid-body td,.datagrid-footer td {
+    border-color: #e6e6e6!important;
+}
+/*********************************弹出框单位下拉框自定义样式*******************************************/
+.dw_combotree{
+    width: calc(100% - 110px);
+}
+.dw_combotree .combo{
+    border-color:#D2D2D2;
+    border-radius: 3px;
+}
+.dw_combotree .panel-header, .panel-body {
+    border-color: #e6e6e6 !important;
+}
+.dw_combotree .textbox .textbox-text{
+    border-radius: 0!important;
+}
+/********************************************layui自定义样式*******************************************/
+.layui-laypage .layui-laypage-curr .layui-laypage-em,
+.left_div .layui-btn,
+.aj_leibie .layui-btn{
+    background-color: #2C8DC3;
+}
+.left_div .layui-btn-disabled{
+    background-color: #FBFBFB;
+}
+.layui-table-body{
+    overflow-x:hidden!important;
+}
+.layui-form-select dl dd.layui-this {
+    background-color: #2e74ca !important;
+}
+.layui-form-radio > i:hover,
+.layui-form-radioed > i {
+    color: #2e74ca !important;
+}
+/***************************************修改滚动条默认样式(html/body)**********************************/
+html::-webkit-scrollbar {
+    width: 8px;/*y轴滚动条宽度*/
+    height: 10px/*x轴滚动条高度*/;
+}
+html::-webkit-scrollbar-track-piece {/*内部轨道*/
+    background-color: #ddf0ff;
+    -webkit-border-radius: 4px;
+}
+html::-webkit-scrollbar-thumb{/*滚动条*/
+    background-color: #47a0d7;
+    height: 50px;
+    -webkit-border-radius: 4px;
+}
+/********************************************修改滚动条默认样式(div)***********************************/
+div::-webkit-scrollbar {
+    width: 8px;/*y轴滚动条宽度*/
+    height: 10px/*x轴滚动条高度*/;
+}
+div::-webkit-scrollbar-track-piece {/*内部轨道*/
+    background-color: #ddf0ff;
+    -webkit-border-radius: 4px;
+}
+div::-webkit-scrollbar-thumb{/*滚动条*/
+    background-color: #47a0d7;
+    height: 50px;
+    -webkit-border-radius: 4px;
+}
+/********************************************显示删除按钮样式(div)***********************************/

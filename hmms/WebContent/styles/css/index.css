@@ -1,0 +1,1748 @@
+@charset "utf-8";
+*,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.arrow {
+  background: url("../../images/zhankai_1.png") no-repeat;
+  background-position: 126px 23px;
+}
+.arrow_hover {
+  background: url("../../images/zhankai.png") no-repeat;
+  background-position: 126px 23px;
+}
+.listBg {
+  background-color: #27c2ff;
+}
+.layui-form-select dl dd.layui-this {
+  background-color: #2e74ca !important;
+}
+.layui-form-radio > i:hover,
+.layui-form-radioed > i {
+  color: #2e74ca !important;
+}
+.hover_listColor {
+  color: #fff;
+}
+.peizhiBg {
+  background: url('../../images/peizhi.png') no-repeat !important;
+}
+.songanBg {
+  background: url('../../images/songanpeizhi.png') no-repeat !important;
+}
+.shouanBg {
+  background: url('../../images/shouanpeizhi.png') no-repeat !important;
+}
+.zuzhiBg {
+  background: url('../../images/zuzhijigou.png') no-repeat !important;
+}
+.xtBg {
+  background: url('../../images/zhuye.png') no-repeat !important;
+}
+.jia {
+  background: url('../../images/jia.png') no-repeat !important;
+  background-position: 10px 10px !important;
+}
+.jian {
+  background: url('../../images/plus.png') no-repeat !important;
+  background-position: 10px 10px !important;
+}
+.zindex {
+  z-index: 100;
+}
+.mr49 {
+  margin-right: 49px;
+}
+.width600 {
+  width: 600px !important;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block !important;
+}
+.width107 {
+  /*width: 104.85% !important;*/
+}
+.liClick {
+  color: #fff !important;
+  background-color: #0c4890 !important;
+}
+.alert_edit {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.alert_edit .editBox {
+  width: 790px;
+  height: 540px;
+  border-radius: 7px;
+  border: 1px solid green;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.alert_edit .editBox .editBox_head {
+  width: 100%;
+  height: 45px;
+  background-color: #2e74ca;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.alert_edit .editBox .editBox_head .editBox_head_font,
+.alert_edit .editBox .editBox_head .edit_head_close {
+  text-align: center;
+}
+.alert_edit .editBox .editBox_head .editBox_head_font {
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  line-height: 45px;
+  text-indent: 10px;
+}
+.alert_edit .editBox .editBox_head .editBox_head_close {
+  background: url("../../images/close.png") no-repeat;
+  margin-right: 10px;
+  margin-top: 12px;
+  width: 19px;
+  height: 30px;
+  float: right;
+}
+.alert_edit .editBox .editBox_content {
+  width: 790px;
+  height: 446px;
+  background-color: #ffffff;
+}
+.alert_edit .editBox .editBox_content .editBox_content_leftul {
+  display: block;
+  float: left;
+  width: 350px;
+  margin-top: 25px;
+  margin-left: 28px;
+}
+.alert_edit .editBox .editBox_content .editBox_content_leftul li {
+  color: #666;
+  display: block;
+  margin-bottom: 20px;
+}
+.alert_edit .editBox .editBox_content .editBox_content_leftul li span {
+  text-align: left;
+  height: 38px;
+  width: 100px;
+  display: inline-block;
+}
+.alert_edit .editBox .editBox_content .editBox_content_leftul li input {
+  width: 220px;
+  display: inline-block;
+}
+.alert_edit .editBox .editBox_content .editBox_content_rightul {
+  display: block;
+  float: right;
+  width: 350px;
+  margin-top: 25px;
+  margin-left: 28px;
+  color: #666;
+}
+.alert_edit .editBox .editBox_content .editBox_content_rightul li {
+  color: #666;
+  display: block;
+  margin-bottom: 20px;
+}
+.alert_edit .editBox .editBox_content .editBox_content_rightul li span {
+  text-align: left;
+  height: 38px;
+  width: 100px;
+  display: inline-block;
+}
+.alert_edit .editBox .editBox_content .editBox_content_rightul li input {
+  width: 220px;
+  color: #666;
+  display: inline-block;
+}
+.alert_edit .editBox .editBox_content .editBox_content_center {
+  display: block;
+  float: left;
+  width: 710px;
+  margin-top: -12px;
+  margin-left: 28px;
+  color: #666;
+}
+.alert_edit .editBox .editBox_content .editBox_content_center li {
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+.alert_edit .editBox .editBox_content .editBox_content_center li span {
+  text-align: left;
+  height: 38px;
+  width: 105px;
+  display: inline-block;
+}
+.alert_edit .editBox .editBox_content .editBox_content_center li span:nth-child(2n) {
+  margin-left: 50px;
+}
+.alert_edit .editBox .editBox_content .editBox_content_center li input {
+  width: 220px;
+  color: #666;
+  display: inline-block;
+}
+.alert_edit .editBox .btnBox {
+  width: 100%;
+  height: 46px;
+  background-color: #e7eff9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.alert_edit .editBox .btnBox div {
+  width: 88px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  float: right;
+  color: #fff;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+.alert_edit .editBox .btnBox div:first-child {
+  background-color: #be6a10;
+}
+.alert_edit .editBox .btnBox div:last-child {
+  background-color: #2466b6;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/bg.jpg");
+  background-size: cover;
+}
+.main .left_ico {
+  display: none;
+  width: 47px;
+  height: 100%;
+  border-left: 0;
+  border-right: 0;
+}
+.main .left_ico .country_ico {
+  width: 100%;
+  height: 70px;
+  background: url('../../images/logo-shouqi.png') no-repeat;
+  background-position: 6px 31px;
+}
+.main .left_ico .ico {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.main .left_ico .ico .ico_child {
+  position: absolute;
+  width: 100px;
+  left: 47px;
+  top: 0px;
+  border-radius: 8px;
+}
+.main .left_ico .ico .ico_child li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  color: #aed6f6;
+  background-color: #1355a5;
+  cursor: pointer;
+}
+.main .left_ico .left_ico_bottom {
+  position: absolute;
+  bottom: 1.6%;
+  left: 0px;
+}
+.main .left_ico .left_ico_bottom div {
+  height: 30px;
+  line-height: 30px;
+  width: 47px;
+  text-align: center;
+}
+.main .left_ico .left_ico_bottom .ico_logout,
+.main .left_ico .left_ico_bottom .ico_zhankai {
+  cursor: pointer;
+}
+.main .inner_left {
+  width: 164px;
+  height: 100%;
+  position: relative;
+}
+.main .inner_left .left_extend {
+  width: 100%;
+  height: 17px;
+  position: absolute;
+  left: 0px;
+  bottom: 2.5%;
+}
+.main .inner_left .left_extend .left_extend_name,
+.main .inner_left .left_extend .left_extend_logout,
+.main .inner_left .left_extend .left_extend_shoufang {
+  float: left;
+  background-position: 0px 2px;
+}
+.main .inner_left .left_extend .left_extend_name {
+  height: 17px;
+  width: 65px;
+  line-height: 17px;
+  color: #a6d8f8;
+  text-align: right;
+  background: url('../../images/ren.png') no-repeat;
+  margin-left: 15px;
+}
+.main .inner_left .left_extend .left_extend_logout {
+  width: 18px;
+  height: 17px;
+  background: url('../../images/logout.png') no-repeat;
+  margin-left: 13px;
+  cursor: pointer;
+}
+.main .inner_left .left_extend .left_extend_shoufang {
+  width: 18px;
+  height: 17px;
+  background: url('../../images/caidanshouqi.png') no-repeat;
+  margin-left: 13px;
+  cursor: pointer;
+}
+.main .inner_left .inner_right_img {
+  width: 100%;
+  height: 140px;
+  background: url("../../images/logo-zhankai.png") no-repeat;
+  background-position: 10px 10px;
+  margin-top: 20px;
+}
+.main .inner_left .selectList {
+  text-align: center;
+  color: #aed6f6;
+}
+.main .inner_left .selectList div:first-child {
+  width: 100%;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+  border-top: 1px solid #357acd;
+  border-bottom: 1px solid #357acd;
+  cursor: pointer;
+  position: relative;
+  margin-top: -1px;
+}
+.main .inner_left .selectList div:first-child span {
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+}
+.main .inner_left .selectList .xtzhuye span {
+  background: url('../../images/zhuye_1.png') no-repeat;
+}
+.main .inner_left .selectList .shouan span {
+  background: url('../../images/shouanpeizhi_1.png');
+}
+.main .inner_left .selectList .songan span {
+  background: url('../../images/songanpeizhi_1.png');
+}
+.main .inner_left .selectList .zuzhi span {
+  background: url('../../images/zuzhijigou_1.png');
+}
+.main .inner_left .selectList .peizhi span {
+  background: url('../../images/peizhi_1.png');
+}
+.main .inner_left .selectList ul {
+  display: none;
+  background: #2575DC;
+}
+.main .inner_left .selectList ul a {
+  color: #aed6f6;
+}
+.main .inner_left .selectList ul li {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  cursor: pointer;
+}
+.main .inner_right {
+  width: calc(100% - 166px);
+  height: 100%;
+}
+.main .inner_right .whiteBg {
+  width: calc(100% - 20px);
+  margin-right: 20px;
+  height: calc(100% - 40px);
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: relative;
+  background-image: url('../../images/bnb.jpg');
+  background-repeat: no-repeat;
+  background-position: 101.3% -3.2%;
+}
+.main .inner_right .whiteBg #demo,
+.main .inner_right .whiteBg #demo0,
+.main .inner_right .whiteBg #demo1,
+.main .inner_right .whiteBg #demo2,
+.main .inner_right .whiteBg #demo3,
+.main .inner_right .whiteBg #demo4,
+.main .inner_right .whiteBg #demo5,
+.main .inner_right .whiteBg #demo6,
+.main .inner_right .whiteBg #demo7,
+.main .inner_right .whiteBg #demo8,
+.main .inner_right .whiteBg #demo9,
+.main .inner_right .whiteBg #demo10,
+.main .inner_right .whiteBg #demo11,
+.main .inner_right .whiteBg #demo12,
+.main .inner_right .whiteBg #demo13,
+.main .inner_right .whiteBg #demo14,
+.main .inner_right .whiteBg #demo15 {
+  margin-top: 3.2%;
+  margin-left: 26%;
+}
+.main .inner_right .whiteBg .white_inner,
+.main .inner_right .whiteBg .white_inner3,
+.main .inner_right .whiteBg .white_inner6,
+.main .inner_right .whiteBg .white_inner9,
+.main .inner_right .whiteBg .white_inner12 {
+  width: 95%;
+  height: 94%;
+  margin-left: 2.3%;
+  margin-top: 1.7%;
+  float: left;
+}
+.main .inner_right .whiteBg .white_inner div.list_title,
+.main .inner_right .whiteBg .white_inner3 div.list_title,
+.main .inner_right .whiteBg .white_inner6 div.list_title,
+.main .inner_right .whiteBg .white_inner9 div.list_title,
+.main .inner_right .whiteBg .white_inner12 div.list_title {
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner div.list_title span,
+.main .inner_right .whiteBg .white_inner3 div.list_title span,
+.main .inner_right .whiteBg .white_inner6 div.list_title span,
+.main .inner_right .whiteBg .white_inner9 div.list_title span,
+.main .inner_right .whiteBg .white_inner12 div.list_title span {
+  width: 9%;
+  height: 33px;
+  display: block;
+  font-weight: bold;
+  line-height: 33px;
+  border-bottom: 3px solid #238be1;
+  text-align: center;
+  position: relative;
+  text-indent: 5px;
+  text-indent: 10px;
+  background: url('../../images/plus.png') no-repeat;
+  background-position: 10px 10px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner .input_box,
+.main .inner_right .whiteBg .white_inner3 .input_box,
+.main .inner_right .whiteBg .white_inner6 .input_box,
+.main .inner_right .whiteBg .white_inner9 .input_box,
+.main .inner_right .whiteBg .white_inner12 .input_box {
+  width: 100%;
+  height: 54px;
+  padding-top: 26px;
+}
+.main .inner_right .whiteBg .white_inner .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner3 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner6 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner9 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner12 .input_box .addBtn {
+  width: 88px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2566b3;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: url('../../images/add.png');
+  background-repeat: no-repeat;
+  background-position: 20px 9px;
+  float: left;
+  margin-right: 20px;
+}
+.main .inner_right .whiteBg .white_inner .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner3 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner6 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner9 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner12 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner3 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner6 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner9 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner12 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner3 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner6 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner9 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner12 .input_box .layui-inline {
+  color: #666666;
+  float: left;
+}
+.main .inner_right .whiteBg .white_inner .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner3 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner6 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner9 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner12 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner3 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner6 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner9 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner12 .input_box .aj_jiedian {
+  margin-right: 15px;
+}
+.main .inner_right .whiteBg .white_inner .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner3 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner6 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner9 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner12 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner3 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner6 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner9 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner12 .input_box .aj_jiedian input {
+  width: 198px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #c0cfdb;
+  text-indent: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.main .inner_right .whiteBg .white_inner .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner3 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner6 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner9 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner12 .input_box .layui-input-inline input {
+  width: 117px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #c0cfdb;
+  text-indent: 5px;
+  font-size: 14px;
+  color: #666;
+}
+.main .inner_right .whiteBg .white_inner .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner3 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner6 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner9 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner12 .input_box .confirmBtn {
+  width: 68px;
+  height: 28px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #06a7e8;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner .list_name,
+.main .inner_right .whiteBg .white_inner3 .list_name,
+.main .inner_right .whiteBg .white_inner6 .list_name,
+.main .inner_right .whiteBg .white_inner9 .list_name,
+.main .inner_right .whiteBg .white_inner12 .list_name {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background-color: #e1f5ff;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul,
+.main .inner_right .whiteBg .white_inner3 .list_name ul,
+.main .inner_right .whiteBg .white_inner6 .list_name ul,
+.main .inner_right .whiteBg .white_inner9 .list_name ul,
+.main .inner_right .whiteBg .white_inner12 .list_name ul {
+  width: 100%;
+  height: 36px;
+  display: block;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li,
+.main .inner_right .whiteBg .white_inner3 .list_name ul li,
+.main .inner_right .whiteBg .white_inner6 .list_name ul li,
+.main .inner_right .whiteBg .white_inner9 .list_name ul li,
+.main .inner_right .whiteBg .white_inner12 .list_name ul li {
+  color: #0b54ac;
+  font-weight: bold;
+  float: left;
+  overflow: hidden;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner3 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner6 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner9 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner12 .list_name ul li:first-child {
+  width: 6%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner3 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner6 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner9 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner12 .list_name ul li:nth-child(2) {
+  width: 11.4%;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner3 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner6 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner9 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner12 .list_name ul li:nth-child(3) {
+  width: 13.5%;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner3 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner6 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner9 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner12 .list_name ul li:nth-child(4) {
+  width: 13.3%;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner3 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner6 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner9 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner12 .list_name ul li:nth-child(5) {
+  width: 13.6%;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner3 .list_name ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner6 .list_name ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner9 .list_name ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner12 .list_name ul li:nth-child(6) {
+  width: 12.6%;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner3 .list_name ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner6 .list_name ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner9 .list_name ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner12 .list_name ul li:nth-child(7) {
+  width: 17.8%;
+}
+.main .inner_right .whiteBg .white_inner .list_name ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner3 .list_name ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner6 .list_name ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner9 .list_name ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner12 .list_name ul li:nth-child(8) {
+  width: 10.3%;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox,
+.main .inner_right .whiteBg .white_inner3 .list_contentBox,
+.main .inner_right .whiteBg .white_inner6 .list_contentBox,
+.main .inner_right .whiteBg .white_inner9 .list_contentBox,
+.main .inner_right .whiteBg .white_inner12 .list_contentBox {
+  width: 100%;
+  height: calc(84% - 126px);
+  overflow-y: scroll;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul {
+  width: 100%;
+  height: 36px;
+  display: block;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li {
+  float: left;
+  overflow: hidden;
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:first-child {
+  width: 6%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(2) {
+  width: 11.7%;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(3) {
+  width: 13.6%;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(4) {
+  width: 13.6%;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(5) {
+  width: 13.6%;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(6) {
+  width: 12.7%;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(7) {
+  width: 15.1%;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(8) {
+  width: 10.3%;
+  color: #0168c0;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(8) .edit,
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(8) .edit,
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(8) .edit,
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(8) .edit,
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(8) .edit {
+  width: 50px;
+  float: left;
+  background: url('../../images/edit.png') no-repeat;
+  background-position: 4px 11px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner .list_contentBox .list_content ul li:nth-child(8) .delete,
+.main .inner_right .whiteBg .white_inner3 .list_contentBox .list_content ul li:nth-child(8) .delete,
+.main .inner_right .whiteBg .white_inner6 .list_contentBox .list_content ul li:nth-child(8) .delete,
+.main .inner_right .whiteBg .white_inner9 .list_contentBox .list_content ul li:nth-child(8) .delete,
+.main .inner_right .whiteBg .white_inner12 .list_contentBox .list_content ul li:nth-child(8) .delete {
+  width: 50px;
+  float: left;
+  background: url('../../images/delete.png') no-repeat;
+  background-position: 4px 11px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner1,
+.main .inner_right .whiteBg .white_inner4,
+.main .inner_right .whiteBg .white_inner7,
+.main .inner_right .whiteBg .white_inner10,
+.main .inner_right .whiteBg .white_inner13 {
+  width: 95%;
+  height: 94%;
+  margin-left: 2.3%;
+  margin-top: 1.7%;
+  float: left;
+}
+.main .inner_right .whiteBg .white_inner1 div.list_title,
+.main .inner_right .whiteBg .white_inner4 div.list_title,
+.main .inner_right .whiteBg .white_inner7 div.list_title,
+.main .inner_right .whiteBg .white_inner10 div.list_title,
+.main .inner_right .whiteBg .white_inner13 div.list_title {
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner1 div.list_title span,
+.main .inner_right .whiteBg .white_inner4 div.list_title span,
+.main .inner_right .whiteBg .white_inner7 div.list_title span,
+.main .inner_right .whiteBg .white_inner10 div.list_title span,
+.main .inner_right .whiteBg .white_inner13 div.list_title span {
+  width: 9%;
+  height: 33px;
+  display: block;
+  font-weight: bold;
+  line-height: 33px;
+  border-bottom: 3px solid #238be1;
+  text-align: center;
+  position: relative;
+  text-indent: 5px;
+  text-indent: 10px;
+  background: url('../../images/plus.png') no-repeat;
+  background-position: 10px 10px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box,
+.main .inner_right .whiteBg .white_inner4 .input_box,
+.main .inner_right .whiteBg .white_inner7 .input_box,
+.main .inner_right .whiteBg .white_inner10 .input_box,
+.main .inner_right .whiteBg .white_inner13 .input_box {
+  width: 100%;
+  height: 54px;
+  padding-top: 26px;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box .layui-form-label,
+.main .inner_right .whiteBg .white_inner4 .input_box .layui-form-label,
+.main .inner_right .whiteBg .white_inner7 .input_box .layui-form-label,
+.main .inner_right .whiteBg .white_inner10 .input_box .layui-form-label,
+.main .inner_right .whiteBg .white_inner13 .input_box .layui-form-label {
+  padding: 3px 0px 0 30px;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box .layui-form-radio,
+.main .inner_right .whiteBg .white_inner4 .input_box .layui-form-radio,
+.main .inner_right .whiteBg .white_inner7 .input_box .layui-form-radio,
+.main .inner_right .whiteBg .white_inner10 .input_box .layui-form-radio,
+.main .inner_right .whiteBg .white_inner13 .input_box .layui-form-radio {
+  margin: 0px 4px 0 0;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner4 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner7 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner10 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner13 .input_box .addBtn {
+  width: 88px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2566b3;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: url('../../images/add.png');
+  background-repeat: no-repeat;
+  background-position: 20px 9px;
+  float: left;
+  margin-right: 20px;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner4 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner7 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner10 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner13 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner1 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner4 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner7 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner10 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner13 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner1 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner4 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner7 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner10 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner13 .input_box .layui-inline {
+  color: #666666;
+  float: left;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner4 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner7 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner10 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner13 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner1 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner4 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner7 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner10 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner13 .input_box .aj_jiedian {
+  margin-right: 15px;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner4 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner7 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner10 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner13 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner1 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner4 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner7 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner10 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner13 .input_box .aj_jiedian input {
+  width: 198px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #c0cfdb;
+  text-indent: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner4 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner7 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner10 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner13 .input_box .layui-input-inline input {
+  width: 117px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #c0cfdb;
+  text-indent: 5px;
+  font-size: 14px;
+  color: #666;
+}
+.main .inner_right .whiteBg .white_inner1 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner4 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner7 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner10 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner13 .input_box .confirmBtn {
+  width: 68px;
+  height: 28px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #06a7e8;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name,
+.main .inner_right .whiteBg .white_inner4 .list_name,
+.main .inner_right .whiteBg .white_inner7 .list_name,
+.main .inner_right .whiteBg .white_inner10 .list_name,
+.main .inner_right .whiteBg .white_inner13 .list_name {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background-color: #e1f5ff;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul,
+.main .inner_right .whiteBg .white_inner4 .list_name ul,
+.main .inner_right .whiteBg .white_inner7 .list_name ul,
+.main .inner_right .whiteBg .white_inner10 .list_name ul,
+.main .inner_right .whiteBg .white_inner13 .list_name ul {
+  width: 100%;
+  height: 36px;
+  display: block;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li,
+.main .inner_right .whiteBg .white_inner4 .list_name ul li,
+.main .inner_right .whiteBg .white_inner7 .list_name ul li,
+.main .inner_right .whiteBg .white_inner10 .list_name ul li,
+.main .inner_right .whiteBg .white_inner13 .list_name ul li {
+  color: #0b54ac;
+  font-weight: bold;
+  float: left;
+  overflow: hidden;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner4 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner7 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner10 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner13 .list_name ul li:first-child {
+  width: 6%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner4 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner7 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner10 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner13 .list_name ul li:nth-child(2) {
+  width: 11.4%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner4 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner7 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner10 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner13 .list_name ul li:nth-child(3) {
+  width: 13.5%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner4 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner7 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner10 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner13 .list_name ul li:nth-child(4) {
+  width: 13.3%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner4 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner7 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner10 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner13 .list_name ul li:nth-child(5) {
+  width: 13.6%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner4 .list_name ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner7 .list_name ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner10 .list_name ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner13 .list_name ul li:nth-child(6) {
+  width: 12.6%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner4 .list_name ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner7 .list_name ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner10 .list_name ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner13 .list_name ul li:nth-child(7) {
+  width: 17.8%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_name ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner4 .list_name ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner7 .list_name ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner10 .list_name ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner13 .list_name ul li:nth-child(8) {
+  width: 10.3%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox,
+.main .inner_right .whiteBg .white_inner4 .list_contentBox,
+.main .inner_right .whiteBg .white_inner7 .list_contentBox,
+.main .inner_right .whiteBg .white_inner10 .list_contentBox,
+.main .inner_right .whiteBg .white_inner13 .list_contentBox {
+  width: 100%;
+  height: calc(84% - 126px);
+  overflow-y: scroll;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul {
+  width: 100%;
+  height: 36px;
+  display: block;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li {
+  float: left;
+  overflow: hidden;
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:first-child {
+  width: 6%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(2) {
+  width: 11.7%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(3) {
+  width: 13.6%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(4) {
+  width: 13.6%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(5) {
+  width: 13.6%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(6),
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(6) {
+  width: 12.7%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(7),
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(7) {
+  width: 15.1%;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(8),
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(8) {
+  width: 10.3%;
+  color: #0168c0;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(8) .edit,
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(8) .edit,
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(8) .edit,
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(8) .edit,
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(8) .edit {
+  width: 50px;
+  float: left;
+  background: url('../../images/edit.png') no-repeat;
+  background-position: 4px 11px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner1 .list_contentBox .list_content ul li:nth-child(8) .delete,
+.main .inner_right .whiteBg .white_inner4 .list_contentBox .list_content ul li:nth-child(8) .delete,
+.main .inner_right .whiteBg .white_inner7 .list_contentBox .list_content ul li:nth-child(8) .delete,
+.main .inner_right .whiteBg .white_inner10 .list_contentBox .list_content ul li:nth-child(8) .delete,
+.main .inner_right .whiteBg .white_inner13 .list_contentBox .list_content ul li:nth-child(8) .delete {
+  width: 50px;
+  float: left;
+  background: url('../../images/delete.png') no-repeat;
+  background-position: 4px 11px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner2,
+.main .inner_right .whiteBg .white_inner5,
+.main .inner_right .whiteBg .white_inner8,
+.main .inner_right .whiteBg .white_inner11,
+.main .inner_right .whiteBg .white_inner14 {
+  width: 95%;
+  height: 94%;
+  margin-left: 2.3%;
+  margin-top: 1.7%;
+  float: left;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box_outer,
+.main .inner_right .whiteBg .white_inner5 .input_box_outer,
+.main .inner_right .whiteBg .white_inner8 .input_box_outer,
+.main .inner_right .whiteBg .white_inner11 .input_box_outer,
+.main .inner_right .whiteBg .white_inner14 .input_box_outer {
+  height: 75%;
+  overflow-y: scroll;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box_outer2,
+.main .inner_right .whiteBg .white_inner5 .input_box_outer2,
+.main .inner_right .whiteBg .white_inner8 .input_box_outer2,
+.main .inner_right .whiteBg .white_inner11 .input_box_outer2,
+.main .inner_right .whiteBg .white_inner14 .input_box_outer2 {
+  height: 70%;
+  overflow-y: scroll;
+  display: none;
+}
+.main .inner_right .whiteBg .white_inner2 .list_title,
+.main .inner_right .whiteBg .white_inner5 .list_title,
+.main .inner_right .whiteBg .white_inner8 .list_title,
+.main .inner_right .whiteBg .white_inner11 .list_title,
+.main .inner_right .whiteBg .white_inner14 .list_title,
+.main .inner_right .whiteBg .white_inner2 .list_title2,
+.main .inner_right .whiteBg .white_inner5 .list_title2,
+.main .inner_right .whiteBg .white_inner8 .list_title2,
+.main .inner_right .whiteBg .white_inner11 .list_title2,
+.main .inner_right .whiteBg .white_inner14 .list_title2 {
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner2 .list_title span,
+.main .inner_right .whiteBg .white_inner5 .list_title span,
+.main .inner_right .whiteBg .white_inner8 .list_title span,
+.main .inner_right .whiteBg .white_inner11 .list_title span,
+.main .inner_right .whiteBg .white_inner14 .list_title span,
+.main .inner_right .whiteBg .white_inner2 .list_title2 span,
+.main .inner_right .whiteBg .white_inner5 .list_title2 span,
+.main .inner_right .whiteBg .white_inner8 .list_title2 span,
+.main .inner_right .whiteBg .white_inner11 .list_title2 span,
+.main .inner_right .whiteBg .white_inner14 .list_title2 span {
+  width: 9%;
+  height: 33px;
+  display: block;
+  font-weight: bold;
+  line-height: 33px;
+  border-bottom: 3px solid #238be1;
+  text-align: center;
+  position: relative;
+  text-indent: 5px;
+  text-indent: 10px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner2 .list_title2 span,
+.main .inner_right .whiteBg .white_inner5 .list_title2 span,
+.main .inner_right .whiteBg .white_inner8 .list_title2 span,
+.main .inner_right .whiteBg .white_inner11 .list_title2 span,
+.main .inner_right .whiteBg .white_inner14 .list_title2 span {
+  margin-top: 30px;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box,
+.main .inner_right .whiteBg .white_inner5 .input_box,
+.main .inner_right .whiteBg .white_inner8 .input_box,
+.main .inner_right .whiteBg .white_inner11 .input_box,
+.main .inner_right .whiteBg .white_inner14 .input_box,
+.main .inner_right .whiteBg .white_inner2 .input_box2,
+.main .inner_right .whiteBg .white_inner5 .input_box2,
+.main .inner_right .whiteBg .white_inner8 .input_box2,
+.main .inner_right .whiteBg .white_inner11 .input_box2,
+.main .inner_right .whiteBg .white_inner14 .input_box2 {
+  width: 100%;
+  height: 54px;
+  padding-top: 26px;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner5 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner8 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner11 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner14 .input_box .addBtn,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .addBtn,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .addBtn,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .addBtn,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .addBtn,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .addBtn {
+  width: 88px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2566b3;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: url('../../images/add.png');
+  background-repeat: no-repeat;
+  background-position: 20px 9px;
+  float: left;
+  margin-right: 20px;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner5 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner8 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner11 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner14 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner2 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner5 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner8 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner11 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner14 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner2 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner5 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner8 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner11 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner14 .input_box .layui-inline,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .layui-inline,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .layui-inline,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .layui-inline,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .layui-inline,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .layui-inline {
+  color: #666666;
+  float: left;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner5 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner8 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner11 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner14 .input_box .aj_leibie,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .aj_leibie,
+.main .inner_right .whiteBg .white_inner2 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner5 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner8 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner11 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner14 .input_box .aj_jiedian,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .aj_jiedian,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .aj_jiedian {
+  margin-right: 15px;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner5 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner8 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner11 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner14 .input_box .aj_leibie input,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .aj_leibie input,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .aj_leibie input,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .aj_leibie input,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .aj_leibie input,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .aj_leibie input,
+.main .inner_right .whiteBg .white_inner2 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner5 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner8 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner11 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner14 .input_box .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .aj_jiedian input,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .aj_jiedian input {
+  width: 198px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #c0cfdb;
+  text-indent: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner5 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner8 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner11 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner14 .input_box .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .layui-input-inline input,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .layui-input-inline input {
+  width: 117px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #c0cfdb;
+  text-indent: 5px;
+  font-size: 14px;
+  color: #666;
+}
+.main .inner_right .whiteBg .white_inner2 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner5 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner8 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner11 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner14 .input_box .confirmBtn,
+.main .inner_right .whiteBg .white_inner2 .input_box2 .confirmBtn,
+.main .inner_right .whiteBg .white_inner5 .input_box2 .confirmBtn,
+.main .inner_right .whiteBg .white_inner8 .input_box2 .confirmBtn,
+.main .inner_right .whiteBg .white_inner11 .input_box2 .confirmBtn,
+.main .inner_right .whiteBg .white_inner14 .input_box2 .confirmBtn {
+  width: 68px;
+  height: 28px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #06a7e8;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name,
+.main .inner_right .whiteBg .white_inner5 .list_name,
+.main .inner_right .whiteBg .white_inner8 .list_name,
+.main .inner_right .whiteBg .white_inner11 .list_name,
+.main .inner_right .whiteBg .white_inner14 .list_name {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background-color: #e1f5ff;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name ul,
+.main .inner_right .whiteBg .white_inner5 .list_name ul,
+.main .inner_right .whiteBg .white_inner8 .list_name ul,
+.main .inner_right .whiteBg .white_inner11 .list_name ul,
+.main .inner_right .whiteBg .white_inner14 .list_name ul {
+  width: 100%;
+  height: 36px;
+  display: block;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name ul li,
+.main .inner_right .whiteBg .white_inner5 .list_name ul li,
+.main .inner_right .whiteBg .white_inner8 .list_name ul li,
+.main .inner_right .whiteBg .white_inner11 .list_name ul li,
+.main .inner_right .whiteBg .white_inner14 .list_name ul li {
+  color: #0b54ac;
+  font-weight: bold;
+  float: left;
+  overflow: hidden;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner5 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner8 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner11 .list_name ul li:first-child,
+.main .inner_right .whiteBg .white_inner14 .list_name ul li:first-child {
+  width: 6%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner5 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner8 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner11 .list_name ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner14 .list_name ul li:nth-child(2) {
+  padding-left: 5%;
+  width: 14.7%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner5 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner8 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner11 .list_name ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner14 .list_name ul li:nth-child(3) {
+  width: 19.7%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner5 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner8 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner11 .list_name ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner14 .list_name ul li:nth-child(4) {
+  width: 19.7%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner5 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner8 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner11 .list_name ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner14 .list_name ul li:nth-child(5) {
+  width: 19.3%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name ul li:last-child,
+.main .inner_right .whiteBg .white_inner5 .list_name ul li:last-child,
+.main .inner_right .whiteBg .white_inner8 .list_name ul li:last-child,
+.main .inner_right .whiteBg .white_inner11 .list_name ul li:last-child,
+.main .inner_right .whiteBg .white_inner14 .list_name ul li:last-child {
+  width: 10.3%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name2,
+.main .inner_right .whiteBg .white_inner5 .list_name2,
+.main .inner_right .whiteBg .white_inner8 .list_name2,
+.main .inner_right .whiteBg .white_inner11 .list_name2,
+.main .inner_right .whiteBg .white_inner14 .list_name2 {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background-color: #e1f5ff;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name2 ul,
+.main .inner_right .whiteBg .white_inner5 .list_name2 ul,
+.main .inner_right .whiteBg .white_inner8 .list_name2 ul,
+.main .inner_right .whiteBg .white_inner11 .list_name2 ul,
+.main .inner_right .whiteBg .white_inner14 .list_name2 ul {
+  width: 100%;
+  height: 36px;
+  display: block;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name2 ul li,
+.main .inner_right .whiteBg .white_inner5 .list_name2 ul li,
+.main .inner_right .whiteBg .white_inner8 .list_name2 ul li,
+.main .inner_right .whiteBg .white_inner11 .list_name2 ul li,
+.main .inner_right .whiteBg .white_inner14 .list_name2 ul li {
+  color: #0b54ac;
+  font-weight: bold;
+  float: left;
+  overflow: hidden;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name2 ul li:first-child,
+.main .inner_right .whiteBg .white_inner5 .list_name2 ul li:first-child,
+.main .inner_right .whiteBg .white_inner8 .list_name2 ul li:first-child,
+.main .inner_right .whiteBg .white_inner11 .list_name2 ul li:first-child,
+.main .inner_right .whiteBg .white_inner14 .list_name2 ul li:first-child {
+  width: 6%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name2 ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner5 .list_name2 ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner8 .list_name2 ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner11 .list_name2 ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner14 .list_name2 ul li:nth-child(2) {
+  width: 40%;
+  text-indent: 20%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name2 ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner5 .list_name2 ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner8 .list_name2 ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner11 .list_name2 ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner14 .list_name2 ul li:nth-child(3) {
+  width: 38%;
+  text-indent: 10%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_name2 ul li:last-child,
+.main .inner_right .whiteBg .white_inner5 .list_name2 ul li:last-child,
+.main .inner_right .whiteBg .white_inner8 .list_name2 ul li:last-child,
+.main .inner_right .whiteBg .white_inner11 .list_name2 ul li:last-child,
+.main .inner_right .whiteBg .white_inner14 .list_name2 ul li:last-child {
+  width: 10.3%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox {
+  width: 100%;
+  height: 75%;
+  overflow-y: scroll;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul {
+  width: 100%;
+  height: 36px;
+  display: block;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li {
+  float: left;
+  overflow: hidden;
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li:first-child {
+  width: 6%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li:nth-child(2) {
+  padding-left: 5%;
+  width: 15%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li:nth-child(3) {
+  width: 20%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li:nth-child(4),
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li:nth-child(4) {
+  width: 20%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li:nth-child(5),
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li:nth-child(5) {
+  width: 20%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li:last-child,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li:last-child,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li:last-child,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li:last-child,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li:last-child {
+  width: 10.3%;
+  color: #0168c0;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li:last-child .edit,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li:last-child .edit,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li:last-child .edit,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li:last-child .edit,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li:last-child .edit {
+  width: 50px;
+  float: left;
+  background: url('../../images/edit.png') no-repeat;
+  background-position: 4px 11px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox .list_content ul li:last-child .delete,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox .list_content ul li:last-child .delete,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox .list_content ul li:last-child .delete,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox .list_content ul li:last-child .delete,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox .list_content ul li:last-child .delete {
+  width: 50px;
+  float: left;
+  background: url('../../images/delete.png') no-repeat;
+  background-position: 4px 11px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 {
+  width: 100%;
+  height: 75%;
+  overflow-y: scroll;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content ul,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content ul,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content ul,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content ul,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content ul {
+  width: 100%;
+  height: 36px;
+  display: block;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content ul li,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content ul li,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content ul li,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content ul li,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content ul li {
+  float: left;
+  overflow: hidden;
+  border-bottom: 1px solid #dbdbdb;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content ul li:first-child,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content ul li:first-child {
+  width: 6%;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content ul li:nth-child(2),
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content ul li:nth-child(2) {
+  width: 40%;
+  text-indent: 20.3%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content ul li:nth-child(3),
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content ul li:nth-child(3) {
+  width: 40%;
+  text-indent: 10.6%;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content ul li:last-child,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content ul li:last-child,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content ul li:last-child,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content ul li:last-child,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content ul li:last-child {
+  width: 10.3%;
+  color: #0168c0;
+  text-align: center;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content ul li:last-child .edit,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content ul li:last-child .edit,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content ul li:last-child .edit,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content ul li:last-child .edit,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content ul li:last-child .edit {
+  width: 50px;
+  float: left;
+  background: url('../../images/edit.png') no-repeat;
+  background-position: 4px 11px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+.main .inner_right .whiteBg .white_inner2 .list_contentBox2 .list_content ul li:last-child .delete,
+.main .inner_right .whiteBg .white_inner5 .list_contentBox2 .list_content ul li:last-child .delete,
+.main .inner_right .whiteBg .white_inner8 .list_contentBox2 .list_content ul li:last-child .delete,
+.main .inner_right .whiteBg .white_inner11 .list_contentBox2 .list_content ul li:last-child .delete,
+.main .inner_right .whiteBg .white_inner14 .list_contentBox2 .list_content ul li:last-child .delete {
+  width: 50px;
+  float: left;
+  background: url('../../images/delete.png') no-repeat;
+  background-position: 4px 11px;
+  text-indent: 18px;
+  cursor: pointer;
+}
+.main .inner_right .radius {
+  position: absolute;
+}
+
+/*媒体查询适应分辨率*/
+/*
+@media screen and (min-width: 1300px) and (max-width:1370px) {
+  html {
+    zoom: 0.7 !important;
+  }
+}
+@media screen and (min-width: 1370px) and (max-width:1450px) {
+  html {
+    zoom: 0.75 !important;
+  }
+}
+@media screen and (min-width: 1450px) and (max-width:1610px) {
+  html {
+    zoom: 0.82 !important;
+  }
+}
+@media screen and (min-width: 1610px) and (max-width:1690px) {
+  html {
+    zoom: 0.9 !important;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width:1300px) {
+  html {
+    zoom: 0.7 !important;
+  }
+}*/
